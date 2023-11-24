@@ -30,18 +30,39 @@ public class Reply {
     }
  
     
-    public String getEnquiryID()
-    {
-  	  return enquiryID;
+    public String getEnquiryID() {
+        return enquiryID;
     }
-	
-    public String getReplyID()
-	{
-    	return replyID;
-	}
-  
-    public String getContents()
-    {
-    	return contents;
+
+    public String getCampID() {
+        return campID;
+    }
+
+    public LocalDate getDateCreated() {
+        return dateCreated;
+    }
+
+    public String getContents() {
+        return contents;
+    }
+
+    public void setContents(String contents) {
+        this.contents = contents;
+    }
+
+    public ArrayList<Reply> getReplies() {
+        return replies;
+    }
+
+    public void addReply(Reply reply) {
+        this.replies.add(reply);
+    }
+
+    public boolean isProcessed() {
+        return isProcessed;
+    }
+
+    public void setProcessed(boolean isProcessed) {
+        this.isProcessed = isProcessed;
     }
 }
